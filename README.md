@@ -11,6 +11,8 @@ over time, how much mould would grow on a surface, and is it getting worse?**
 - No dependencies. Node 18+ or Python 3 standard library only.
 - MIT licensed.
 
+**Want to build a working early-warning system?** Start with the [DIY guide](diy/README.md): four short chapters, from sensor to alert.
+
 ## How the model works
 
 ```
@@ -134,6 +136,7 @@ A common shortcut (a hand-built lookup curve plus linear growth) is in
 | `tools/sign-datagen/` | Synthetic Nexelec SIGN sensor data with a known answer, plus a verifier |
 | `tools/simulator/` | 100 rooms x 61 days of hourly data, to CSV and a Postgres load script |
 | `tools/compare/` | Simplified shortcut vs published model, side by side |
+| `diy/` | Build your own early warning: a four-chapter guide from sensor to alert, with two small scripts |
 
 ## The tools
 
