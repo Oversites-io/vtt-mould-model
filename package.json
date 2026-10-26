@@ -1,0 +1,20 @@
+{
+  "name": "vtt-mould-model",
+  "version": "1.0.0",
+  "description": "The VTT / Hukka-Viitanen mould growth model in JavaScript and Python, with tools for scoring temperature and humidity sensor data.",
+  "type": "module",
+  "main": "js/vtt-model.mjs",
+  "exports": {
+    ".": "./js/vtt-model.mjs"
+  },
+  "scripts": {
+    "test": "node --test js/ tools/compare/ && python3 python/vtt_hukka_viitanen.py",
+    "simulate": "node tools/simulator/generate.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": ["mould", "mold", "vtt", "hukka-viitanen", "damp", "humidity", "condensation", "building-physics"],
+  "license": "MIT",
+  "private": true
+}
